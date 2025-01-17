@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Techevents</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="download.png" alt="RK Tech Logo">
+        <nav>
+            <a onclick="showSection('register-section')">Register</a>
+            <a onclick="showSection('gallery-section')">Gallery</a>
+            <a onclick="showSection('contact-section')">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container" id="register-section">
+        <h2>Register for an Event</h2>
+        <form>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <select id="event" onchange="updateDate(event)" required>
+                <option value="">Select an Event</option>
+                <option value="hackathon">Hackathon</option>
+                <option value="seminar">Seminar</option>
+                <option value="workshop">Workshop</option>
+            </select>
+            <input type="datetime-local" id="event-date" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="container" id="gallery-section">
+        <h2>Image Gallery</h2>
+        <div class="image-gallery" id="gallery"></div>
+    </div>
+
+    <div class="container" id="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
