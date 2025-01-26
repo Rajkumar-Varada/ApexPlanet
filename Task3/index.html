@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delish</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>Delish</header>
+  
+  <nav>
+    <a href="#" data-section="home">Home</a>
+    <a href="#" data-section="images">Images</a>
+    <a href="#" data-section="quiz">Quiz</a>
+    <a href="#" data-section="jokes">Jokes</a>
+  </nav>
+
+  <!-- Sections -->
+  <div id="home" class="section active">
+    <h2>Welcome to Delish</h2>
+    <p>Explore delicious food images, take a fun quiz, and enjoy jokes!</p>
+    <div class="carousel">
+      <button id="prev">&#9664;</button>
+      <div id="carousel-images" style="display: flex; transition: transform 0.5s ease;">
+        <img src="img1.jpg" alt="Pizza">
+        <img src="img2.jpg" alt="Burger">
+        <img src="img3.jpg" alt="Sushi">
+        <img src="img4.jpg" alt="Ice Cream">
+        <img src="img5.jpg" alt="Waffles">
+      </div>
+      <button id="next">&#9654;</button>
+    </div>
+  </div>
+
+  <div id="images" class="section">
+    <h2>Food Images</h2>
+    <div class="carousel">
+      <button id="prev-images">&#9664;</button>
+      <div id="carousel-images" style="display: flex; transition: transform 0.5s ease;">
+        <img src="img1.jpg" alt="Pizza">
+        <img src="img2.jpg" alt="Burger">
+        <img src="img3.jpg" alt="Sushi">
+        <img src="img4.jpg" alt="Ice Cream">
+        <img src="img5.jpg" alt="Waffles">
+      </div>
+      <button id="next-images">&#9654;</button>
+    </div>
+  </div>
+
+  <div id="quiz" class="section">
+    <div class="quiz" id="quiz">
+      <h3>Food Quiz</h3>
+      <div class="timer" id="timer">Time: 30s</div>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div id="quiz-question">Loading question...</div>
+      <div id="quiz-options" class="options"></div>
+      <button id="next-question" style="display: none;">Next Question</button>
+      <div id="score"></div>
+    </div>
+  </div>
+
+  <div id="jokes" class="section">
+    <div class="jokes" id="jokes">
+      <h3>Food Jokes</h3>
+      <p id="joke">Click the button to get a joke!</p>
+      <button id="new-joke">Get a Joke</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
