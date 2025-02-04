@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickPick - Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">QuickPick</div>
+
+    <div class="filters">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="accessories">Accessories</option>
+        </select>
+
+        <label for="price">Max Price: $<span id="priceValue">1000</span></label>
+        <input type="range" id="price" min="10" max="1000" value="1000">
+
+        <label for="sort">Sort by Rating:</label>
+        <select id="sort">
+            <option value="default">Default</option>
+            <option value="high">Highest to Lowest</option>
+            <option value="low">Lowest to Highest</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <div class="products" id="product-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
