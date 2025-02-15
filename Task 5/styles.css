@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: blue;
+}
+
+.sidebar {
+  width: 20%;
+  background: blue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar p {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  display: inline-block;
+  margin: 5px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: blue;
+  color: white;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.skills i, .services i {
+  font-size: 100px;
+  margin: 10px;
+  align-items: center;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
